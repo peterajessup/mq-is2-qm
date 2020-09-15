@@ -1,0 +1,38 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: mq1
+  namespace: mq
+spec:
+  license:
+    accept: true
+    license: L-RJON-BN7PN3
+    use: NonProduction
+  queueManager:
+    image: image-registry.openshift-image-registry.svc:5000/mq/demomq:v2
+    storage:
+      queueManager:
+        enabled: true
+    availability:
+      type: SingleInstance
+    name: QM1
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  version: 9.2.0.0-r1
+  web:
+    enabled: true
+  pki:
+    keys:
+      - name: label1
+        secret:
+          secretName: mq1key
+          items:
+            - tls.key
+            - tls.crt
+  imagePullSecrets:
+    - name: default-dockercfg-hs4dm
