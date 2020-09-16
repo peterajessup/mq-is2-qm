@@ -28,4 +28,4 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'demomq:v1'
+      name: 'demomq:v1.1'
