@@ -38,4 +38,4 @@ spec:
             - tls.key
             - tls.crt
   imagePullSecrets:
-    - name: default-dockercfg-hs4dm
+    - name: default-dockercfg-hqdkf
