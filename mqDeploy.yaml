@@ -9,7 +9,7 @@ spec:
     license: L-RJON-BN7PN3
     use: NonProduction
   queueManager:
-    image: image-registry.openshift-image-registry.svc:5000/mq/mqivt:v1.1
+    image: image-registry.openshift-image-registry.svc:5000/mq/mqivt:v1.2
     storage:
       queueManager:
         enabled: true
