@@ -4,19 +4,9 @@ metadata:
   name: mqdemo 
 spec:
   source:
-    dockerfile: |-
-      FROM cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.0.0-r1-amd64
-      RUN printf "DEFINE CHANNEL(TLSCONN) CHLTYPE(SVRCONN) SSLCIPH(ANY) CERTLABL('label1') SSLCAUTH (OPTIONAL) REPLACE\n \
-      SET CHLAUTH(TLSCONN) TYPE(BLOCKUSER) USERLIST(nobody)\n \
-      SET CHLAUTH(TLSCONN) TYPE (ADDRESSMAP) ADDRESS(*) MCAUSER('mqm')\n \ 
-      DEFINE CHANNEL(ACE.CONN) CHLTYPE(SVRCONN) REPLACE\n \
-      SET CHLAUTH(ACE.CONN) TYPE(BLOCKUSER) USERLIST(nobody)\n \
-      SET CHLAUTH(ACE.CONN) TYPE (ADDRESSMAP) ADDRESS(*) MCAUSER('mqm')\n \ 
-      ALTER AUTHINFO(SYSTEM.DEFAULT.AUTHINFO.IDPWOS) AUTHTYPE(IDPWOS) CHCKCLNT(NONE) ADOPTCTX(NO)\n \
-      REFRESH SECURITY TYPE(CONNAUTH)\n \
-      DEFINE QLOCAL(IVT.R) REPLACE\n \
-      DEFINE QLOCAL(IVT.Q) REPLACE\n" > /etc/mqm/demo.mqsc 
-      LABEL summary "Demo MQ image"
+    git:
+      uri: https://github.com/peterajessup/cp4idemomq
+      ref: master
   strategy:
     type: Docker
     dockerStrategy:
