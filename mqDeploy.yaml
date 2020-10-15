@@ -10,6 +10,7 @@ spec:
     use: NonProduction
   queueManager:
     image: image-registry.openshift-image-registry.svc:5000/mq/mqivt:latest
+    imagePullPolicy: always
     storage:
       queueManager:
         enabled: true
