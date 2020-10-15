@@ -18,4 +18,5 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'mqivt:v1.2'
+      name: 'mqivt:latest'
+      alias: true
