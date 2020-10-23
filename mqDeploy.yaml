@@ -28,7 +28,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: true
+    enabled: false
     namespace: operationsdashboard
   pki:
     keys:
