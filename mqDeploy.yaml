@@ -28,7 +28,7 @@ spec:
   web:
     enabled: true
   tracing:
-    enabled: false
+    enabled: true
     namespace: opsdash
   pki:
     keys:
