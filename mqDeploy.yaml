@@ -39,4 +39,4 @@ spec:
             - tls.key
             - tls.crt
   imagePullSecrets:
-    - name: default-dockercfg-dqcb7
+    - name: default-dockercfg-55nkv
