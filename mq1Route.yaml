@@ -7,7 +7,7 @@ spec:
   host: tlsconn.chl.mq.ibm.com
   to:
     kind: Service
-    name: mq1-ibm-mq 
+    name: mq2-ibm-mq 
   port:
     targetPort: 1414
   tls:
