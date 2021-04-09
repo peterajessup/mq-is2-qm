@@ -15,6 +15,7 @@ spec:
       queueManager:
         enabled: true
     availability:
+#     type: SingleInstance
       type: NativeHA
     name: QM2
     mqsc:
