@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: mq2
+  name: mq1
   namespace: mq
 spec:
   license:
@@ -17,7 +17,7 @@ spec:
     availability:
 #     type: SingleInstance
       type: NativeHA
-    name: QM2
+    name: QM1
     mqsc:
     - configMap:
         name: ivt-mqsc
@@ -40,7 +40,7 @@ spec:
     keys:
       - name: label1
         secret:
-          secretName: mq2key
+          secretName: mq1key
           items:
             - tls.key
             - tls.crt
