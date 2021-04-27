@@ -12,7 +12,7 @@ Alternatively you can fork this repository and use your own certs and keys.
 A sample script for the full deployment is as follows:
 Note the script is written to ignore deletion errors of objects on the target cluster 
 ```
-oc project mq 
+oc project ibmmq 
 set +e
 # Remove the runnning queue manager instance (if any)
 
