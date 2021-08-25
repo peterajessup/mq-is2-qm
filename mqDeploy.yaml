@@ -2,15 +2,15 @@ apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
   name: mq1
-  namespace: ibmmq
+  namespace: mq
 spec:
   license:
     accept: true
-   # license: L-RJON-BYRMYW
-    license: L-RJON-BN7PN3
+    license: L-RJON-BZFQU2
+    metric: VirtualProcessorCore
     use: NonProduction
   queueManager:
-    image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.2.0-r1-amd64
+    image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.3.0-r1-amd64
     imagePullPolicy: Always
     storage:
       queueManager:
