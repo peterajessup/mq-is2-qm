@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: ivt-mqsc
+  name: mq1-mqsc
 data:
   ivt.mqsc: |
     DEFINE CHANNEL(TLS) CHLTYPE(SVRCONN) SSLCIPH(TLS_RSA_WITH_AES_128_CBC_SHA256) CERTLABL('label1') SSLCAUTH (OPTIONAL) REPLACE
