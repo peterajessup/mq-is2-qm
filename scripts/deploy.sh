@@ -9,7 +9,7 @@ oc delete QueueManager mq1
 oc delete route mq1route
 oc delete secret mq1key
 oc delete configMap mq1-mqsc
-oc delete perststentvolumeclaim data-mq1-ibm-mq-0 data-mq1-ibm-mq-1 data-mq1-ibm-mq-2
+oc delete persistentvolumeclaim data-mq1-ibm-mq-0 data-mq1-ibm-mq-1 data-mq1-ibm-mq-2
 set -e
 # Create the route and the keystore secret and mqsc configMap
 oc apply -f mq1Route.yaml
