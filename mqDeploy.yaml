@@ -11,7 +11,7 @@ spec:
     metric: VirtualProcessorCore
     use: NonProduction
   queueManager:
-    image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.3.0-r1-amd64
+    image: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.0.0-r1-amd64
     imagePullPolicy: Always
     storage:
       queueManager:
