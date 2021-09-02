@@ -22,7 +22,7 @@ spec:
     name: QM1
     mqsc:
     - configMap:
-        name: ivt2-mqsc
+        name: mq2-mqsc
         items:
         - ivt.mqsc
   template:
