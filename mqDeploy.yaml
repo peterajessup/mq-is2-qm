@@ -17,6 +17,7 @@ spec:
       queueManager:
         enabled: true
     availability:
+      updateStrategy: RollingUpdate
       type: SingleInstance
    #   type: NativeHA
     name: QM1
