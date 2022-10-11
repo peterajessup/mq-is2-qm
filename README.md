@@ -1,4 +1,4 @@
-# cp4idemomq
+# cp4i-demo-mq2
 
 This repository is to be used for creating an MQ Queue Manager on OCP, version 4.10.x, with IBM's Cloudpak for Integration Installed (verison 2022.2.1 or higher).
 
