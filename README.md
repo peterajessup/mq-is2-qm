@@ -9,3 +9,4 @@ In addition, a tls key and cert is provided for the queue manager's keystore, an
 using these artifacts. These files can also be used to create a keystore for the MQ client to connect, for simplicity.
 Alternatively you can fork this repository and use your own certs and keys.
 
+In the client directory there is a sample CCDT and a keystore for connecting to the queue manger from outside the cluster. 
