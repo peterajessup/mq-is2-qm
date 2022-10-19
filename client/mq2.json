@@ -1,0 +1,30 @@
+{
+  "channel":
+  [
+    {
+      "general":
+      {
+        "description": "TLS CHANNEL for mq2"
+      },
+      "name": "TLS2",
+      "clientConnection":
+      {
+        "connection":
+        [
+          {
+            "host": "mq2-ibm-mq-qm-mq.itzroks-310000mg1w-5wkxit-6ccd7f378ae819553d37d5f2ee142bd6-0000.jp-tok.containers.appdomain.cloud",
+            "port": 443 
+          }
+        ],
+        "queueManager": "QM1"
+      },
+      "transmissionSecurity":
+      {
+        "cipherSpecification": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "certificateLabel": "label1",
+        "certificatePeerName": ""
+      },
+      "type": "clientConnection"
+    }
+  ]
+}
