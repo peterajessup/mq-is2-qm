@@ -17,6 +17,13 @@ spec:
       defaultClass: ibmc-block-gold
       queueManager:
         type: persistent-claim
+    resources:
+      limits:
+        cpu: '1'
+        memory: 4Gi
+      requests:
+        cpu: '1'
+        memory: 4Gi
     availability:
       updateStrategy: RollingUpdate
       type: SingleInstance
