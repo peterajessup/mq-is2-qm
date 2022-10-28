@@ -17,7 +17,7 @@ spec:
       defaultClass: ibmc-block-gold
       queueManager:
         type: persistent-claim
-        size: 20Gi
+        size: 30Gi
     resources:
       limits:
         cpu: '1'
