@@ -47,7 +47,7 @@ spec:
     enabled: true
   mqDashboard: true
   tracing:
-    enabled: true
+    enabled: false
     namespace: od
   pki:
     keys:
