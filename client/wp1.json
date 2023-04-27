@@ -4,15 +4,15 @@
     {
       "general":
       {
-        "description": "TLS CHANNEL for mq2"
+        "description": "TLS CHANNEL for wp1"
       },
-      "name": "TLS2",
+      "name": "WPTLS1",
       "clientConnection":
       {
         "connection":
         [
           {
-            "host": "mq2-ibm-mq-qm-mq.itzroks-310000mg1w-5wkxit-6ccd7f378ae819553d37d5f2ee142bd6-0000.jp-tok.containers.appdomain.cloud",
+            "host": "wp1-ibm-mq-qm-wbc1.cluster410-3-643d6b687ab93581d24420becac24aae-0000.au-syd.containers.appdomain.cloud",
             "port": 443 
           }
         ],
