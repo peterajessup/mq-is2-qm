@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: subscriber
-    image: quay.io/marwan_attar_ibm/message-server:qbe
+    image: quay.io/marwan_attar_ibm/message-server:qbe-v2
     ports:
     - containerPort: 8080
