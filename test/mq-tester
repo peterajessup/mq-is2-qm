@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: subscriber
+spec:
+  containers:
+  - name: subscriber
+    image: quay.io/marwan_attar_ibm/message-server:qbe
+    ports:
+    - containerPort: 8080
