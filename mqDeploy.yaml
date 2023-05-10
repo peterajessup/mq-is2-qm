@@ -3,6 +3,8 @@ kind: QueueManager
 metadata:
   name: mq2
   namespace: mq
+  labels: 
+    testTarget: mq2
 spec:
   license:
     accept: true
