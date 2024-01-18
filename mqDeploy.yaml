@@ -59,11 +59,11 @@ spec:
           items:
             - tls.key
             - tls.crt
-    trust:
-      - name: trust1
-        secret:
-          secretName: tls-trust
-          items:
-            - tls.crt
+#    trust:
+#      - name: trust1
+#        secret:
+#          secretName: tls-trust
+#          items:
+#            - tls.crt
   imagePullSecrets:
     - name: ibm-entitlement-key
