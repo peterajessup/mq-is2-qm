@@ -52,6 +52,13 @@ spec:
     enabled: false
     namespace: od
   pki:
+    keys:
+      - name: qmlabel
+        secret:
+          secretName: mq2key
+          items:
+            - qm.key
+            - qm.crt
     trust:
       - name: trust1
         secret:
