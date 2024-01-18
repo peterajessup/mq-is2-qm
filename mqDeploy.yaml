@@ -57,8 +57,8 @@ spec:
         secret:
           secretName: mq2key
           items:
-            - qm.key
-            - qm.crt
+            - tls.key
+            - tls.crt
     trust:
       - name: trust1
         secret:
