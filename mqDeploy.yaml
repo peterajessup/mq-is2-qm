@@ -52,12 +52,11 @@ spec:
     enabled: false
     namespace: od
   pki:
-    keys:
-      - name: label1
+    trust:
+      - name: trust1
         secret:
-          secretName: mq2key
+          secretName: tls-trust
           items:
-            - tls.key
             - tls.crt
   imagePullSecrets:
     - name: ibm-entitlement-key
