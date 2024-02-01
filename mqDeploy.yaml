@@ -37,6 +37,11 @@ spec:
         name: mq2-mqsc
         items:
         - ivt.mqsc
+    ini:
+    - configMap:
+        name: mq2-mqsc
+        items:
+        - mq.ini
   #template:
   #  pod:
   #    containers:
