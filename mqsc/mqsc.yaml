@@ -16,3 +16,8 @@ data:
     DEFINE QLOCAL(IVT.R) DEFPSIST(YES) MAXDEPTH(5000000) REPLACE
     DEFINE QLOCAL(IVT.P) DEFPSIST(YES) MAXDEPTH(5000000) REPLACE
     DEFINE QLOCAL(BACKEND.QUEUE) DEFPSIST(YES) MAXDEPTH(5000000) REPLACE
+    mq.ini: |-
+    Service:
+      Name=AuthorizationService
+      EntryPoints=14
+      SecurityPolicy=UserExternal
