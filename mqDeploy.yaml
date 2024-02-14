@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: mq2
+  name: mq3
   namespace: mq
   labels: 
     testTarget: mq2
