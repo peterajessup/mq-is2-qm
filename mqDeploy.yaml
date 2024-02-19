@@ -15,17 +15,17 @@ spec:
   queueManager:
     imagePullPolicy: Always
     storage:
-      defaultClass: ibmc-block-gold
+      defaultClass: imbc-vpc-block-10iops-tier
       queueManager:
         type: persistent-claim
         size: 10Gi
     resources:
       limits:
         cpu: '0.5'
-        memory: 4Gi
+        memory: 2Gi
       requests:
         cpu: '0.5'
-        memory: 4Gi
+        memory: 2Gi
     availability:
       updateStrategy: RollingUpdate
       type: SingleInstance
@@ -50,11 +50,7 @@ spec:
   #        name: qmgr
   version: 9.3.3.0-r1
   web:
-    enabled: true
-  mqDashboard: true
-  tracing:
     enabled: false
-    namespace: od
   pki:
     keys:
       - name: qmlabel
