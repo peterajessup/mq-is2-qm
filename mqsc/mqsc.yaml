@@ -28,4 +28,4 @@ data:
       Service=File
       Name=JSONLogs
       Format=json
-      FilePrefix=AMQERR
+      FilePrefix=JSONERR
