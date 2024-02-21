@@ -15,7 +15,8 @@ spec:
   queueManager:
     imagePullPolicy: Always
     storage:
-      defaultClass: imbc-vpc-block-10iops-tier
+      defaultClass: ibmc-block-gold
+      #defaultClass: imbc-vpc-block-10iops-tier
       queueManager:
         type: persistent-claim
         size: 10Gi
