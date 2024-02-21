@@ -24,3 +24,8 @@ data:
       Name=AuthorizationService
       EntryPoints=14
       SecurityPolicy=UserExternal
+    DiagnosticMessages:
+      Service=File
+      Name=JSONLogs
+      Format=json
+      FilePrefix=AMQERR
